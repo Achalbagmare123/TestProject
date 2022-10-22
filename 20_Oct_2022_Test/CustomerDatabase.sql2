@@ -1,0 +1,38 @@
+create table Customer_2(
+Cust_id varchar2(5) not null,
+Fname varchar2(15) not null,
+Lname varchar2(15),
+Area char(2),
+Phone number(10),
+DOB DATE,
+Payment number(6,2)
+)
+ 
+ desc Customer_2
+
+insert into Customer_2 values ('A01','Ivan','Ross','SA',6125467,TO_DATE('15-jan-86','DD/MM/YYYY'),800.50);
+insert into Customer_2 values ('A02','Vandana','Ray','MU',5560379,TO_DATE('20-dec-87','DD/MM/YYYY'),1000.75);
+insert into Customer_2 values ('A03','Pramada','Jauguste','DA',4560379,TO_DATE('25-jul-67','DD/MM/YYYY'),500.00);
+insert into Customer_2 values ('A04','Basu','Navindi','BA',6125401,TO_DATE('28-feb-56','DD/MM/YYYY'),860.00);
+insert into Customer_2 values ('A05','Ravi','Shridhar','NA',000,TO_DATE('15-feb-89','DD/MM/YYYY'),500.00);
+insert into Customer_2 values ('A06','Rukmini','Aiyer','GH',5125274,TO_DATE('23-jul-87','DD/MM/YYYY'),1500.50);
+
+select * from Customer_2
+
+update Customer_2 set Phone = 5894652 where Cust_id ='A02';
+update Customer_2 set Phone = 6785432 where Cust_id ='A04';
+
+update Customer_2 set DOB = '04-jul-1956' where Cust_id = 'A03';
+update Customer_2 set DOB = '18-nov-1998' where Cust_id = 'A05';
+
+select * from Customer_2
+
+insert into Customer_2 values('B01','Ram','Aiyer','GH',9845724,TO_DATE('16-feb-56','DD/MM/YYYY'),2000.00);
+insert into Customer_2 values('B02','David','Roy','RT',5894126,TO_DATE('30-mar-89','DD/MM/YYYY'),860.00);
+insert into Customer_2 values('B03','Padma','Dehu','HJ',7562145,TO_DATE('23-jul-76','DD/MM/YYYY'),1500.75);
+insert into Customer_2 values('B04','Vaish','Shah','KU',2369452,TO_DATE('17-dec-94','DD/MM/YYYY'),500.00);
+insert into Customer_2 values('B05','Tom','Christina','RE',6597455,TO_DATE('26-jan-54','DD/MM/YYYY'),1000.70);
+
+update Customer_2 set Fname = 'Parul' where Cust_id = 'B02';
+
+delete from Customer_2 where Area = 'KU'

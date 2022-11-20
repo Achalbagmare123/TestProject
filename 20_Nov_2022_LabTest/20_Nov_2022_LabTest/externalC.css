@@ -1,0 +1,16 @@
+h1{
+color : rgb(230, 0, 153);
+font-family : Arial;
+font-size : 40px;
+text-shadow : 5px 5px blue;
+letter-spacing : uppercase;
+text-decoration : 5px white underline;
+}
+#a2{
+	color : #4d94ff;
+	text-decoration : 5px dotted black underline;
+}
+#a1{
+	color : #ffccff;
+
+}
